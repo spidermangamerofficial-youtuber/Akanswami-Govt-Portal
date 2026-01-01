@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akanswami Government | Official Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* CSS Variables for easy color changes */
+        :root {
+            --primary-blue: #002e5d;
+            --secondary-blue: #0056b3;
+            --accent-gold: #d4af37;
+            --light-gray: #f8f9fa;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            text-transform: uppercase;
+        }
+
+        .gov-flag {
+            height: 50px; /* Adjust size as needed */
+            width: auto;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-blue);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,46,93,0.8), rgba(0,46,93,0.8)), 
+                        url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+        }
+
+        .cta-button {
+            background: var(--accent-gold);
+            color: var(--primary-blue);
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 60px 5%;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            border-top: 4px solid var(--primary-blue);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--secondary-blue);
+            margin-bottom: 15px;
+        }
+
+        /* Form Section */
+        .form-container {
+            padding: 60px 5%;
+            background: var(--light-gray);
+        }
+
+        .form-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        iframe {
+            width: 100%;
+            height: 900px; /* Adjust height based on your form length */
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-blue);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 0.9rem;
+        }
+
+        /* Additional Styles */
+        .btn-apply {
+            display: inline-block;
+            background-color: #004080;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .btn-apply:hover {
+            background-color: #002e5d;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="Picture4.png" alt="Akanswami Flag" class="gov-flag">
+            Akanswami Govt</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#apply">Apply Now</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Serving the People</h1>
+        <p>Official Digital Portal of the Akanwami Government</p>
+        <a href="#apply" class="cta-button">Access Services</a>
+    </section>
+
+    <section class="services" id="services">
+        <div class="section-title">
+            <h2>Our Key Services</h2>
+            <p>Direct access to ministerial resources and public welfare</p>
+        </div>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-landmark"></i>
+                <h3>Governance</h3>
+                <p>Access policy documents and official government records.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-file-invoice"></i>
+                <h3>Applications</h3>
+                <p>Apply for permits, certificates, and government schemes.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-users"></i>
+                <h3>Public Welfare</h3>
+                <p>Support services for citizens and local communities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-container" id="apply">
+        <div class="section-title">
+            <h2>Official Application Form</h2>
+            <p>Please complete the form below to submit your request.</p>
+        </div>
+        <div class="form-wrapper">
+           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvQvu22IYa5bczQ_ydyOeSU3dzew9ib1fak946VtmIkGRgGQ/viewform?embedded=true" width="640" height="2276" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                Loading…
+            </iframe>
+        </div>
+    </section>
+
+    <div style="text-align: center; margin: 20px 0;">
+            <a href="https://forms.gle/pdzQEXNCzD7s5MxbA" target="_blank" class="btn-apply">Open Form in New Tab</a>
+        </div>
+
+    <footer>
+        <p>&copy; 2026 Akanswami Government. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Contact Support</a>
+        </div>
+    </footer>
+
+</body>
+</html>
